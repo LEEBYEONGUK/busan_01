@@ -1,0 +1,16 @@
+/* 우선순위에 관하여 */
+
+/* 전체적용은 *로 */
+* {
+  color: brown;
+}
+
+p1 {
+  color: rgb(0, 121, 121);
+}
+/* 클래스선택자는 .으로 */
+.c1{color: dodgerblue;}
+/* id는 #으로 지정 */
+#in1{
+  color:dimgray;
+}
