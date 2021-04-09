@@ -25,21 +25,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      font-family: 'Black Han Sans', sans-serif;
-    }
-  </style>
+  <a style * { font-family: 'Black Han Sans', sans-serif;}></a>
   <title>Hello, world!</title>
 </head>
 
 <body>
+
+
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index1.html">
         <img src="myhome/img01.png" alt="로고" width="30" height="24">
 
-        Navbar</a>
+        붓싼</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index1.html">Home2</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -67,7 +66,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">오이소! 보이소! 사이소!</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -77,8 +76,23 @@
       </div>
     </div>
   </nav>
+  <!-- 페이지 이동 경로 표시 breadcrum -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">부산</li>
+    </ol>
+  </nav>
 
-
+  <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+  <!-- 이동경로표시끝 -->
   <p style="padding: 10px; ">
     <h1 style="text-align: center;"> 부산의 여행지</h1>
   </p>
@@ -94,24 +108,32 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="myhome/image/열공.jpg" class="d-block w-100" alt="...">
+          <img src="myhome/image/새 송도케이블카이미지.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>열공</h3>
-            <p>열공아래</p>
+            <a href="붓싼명소.html">
+              <h3>부산 명소</h3>
+            </a>
+            <p>바다 안보믄 붓싼 온 거 아이다</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="myhome/image/빡공.jpg" class="d-block w-100" alt="...">
+          <img src="myhome/image/국밥이미지.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>빡공</h3>
-            <p>빡공아래</p>
+            <a href="붓싼맛집.html">
+
+              <h3>부산 맛집</h3>
+            </a>
+            <p>국밥묵고 호떡 묵고 어묵 무야지 부싼온기다</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="myhome/image/불공.jpg" class="d-block w-100" alt="...">
+          <img src="myhome/image/부산특산물.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>불공?</h3>
-            <p>불공아래</p>
+            <a href="붓싼특산물.html">
+              <h3>부산 특산물</h3>
+            </a>
+
+            <p>사가가 노나 주야 댈 것들</p>
           </div>
         </div>
       </div>
@@ -127,9 +149,17 @@
       </button>
     </div>
   </div>
+  <!-- 페이지 이동 버튼그룹 -->
+  <p a style="align-content: baseline;"> <div class="btn-group">
+    <a href="index1.html" class="btn btn-primary active" aria-current="page">첫페이지</a>
+    <a href="붓싼맛집.html" class="btn btn-primary">맛집</a>
+    <a href="붓싼명소.html" class="btn btn-primary">명소</a>
+    <a href="붓싼특산물.html" class="btn btn-primary">특산물</a>
+  </div></p>
 
+  <!-- 페이지이동 버튼그룹끝 -->
   <!-- 카드 넣어보기 -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="card-group">
       <div class="card">
         <img src="myhome/image/오른팔.png" class="card-img-top" alt="...">
@@ -175,7 +205,7 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
