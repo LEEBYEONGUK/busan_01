@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <style>
+    body {
+      font-weight: bold;
+      font-size: 12pt;
+    }
+
+    .sp1 {
+      position: static;
+      /*흐름에 따라 배치되는 static*/
+      top: 400px;
+      /* 적용되지않음 */
+      background-color: cyan;
+      width: 400px;
+      height: 50px;
+    }
+
+    .sp2 {
+      position: relative;
+      left: 30px; top: -10px;
+      background-color: orange;
+      width: 400px;
+      height: 50px;
+    }
+
+    .sp3 {position: relative;
+    left: 30px;
+    top: 20px;
+      background-color: lightgreen;
+      width: 400px;
+      height: 50px;
+    }
+  </style>
+  <title>title</title>
+</head>
+
+<body>
+  <h1>positioning style1</h1>
+  <p class="sp1">정적 위치 설정 적용1</p>
+  <div class="sp2">정적 위치 설정 적용2</div>
+  <p class="sp3">기본 위치 설정</p>
+</body>
