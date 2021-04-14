@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <style>
+    /* 보이지 않지만 자리는 차지하는 설정 */
+    .v1 { 
+      visibility: hidden;
+      border: 1px dotted red;
+    }
+
+    .v2 {
+      opacity: 1.0;
+      visibility: visible;
+      border: 1px dotted red;
+    }
+    .v2 :hover{
+      opacity: 0.3;
+      visibility: visible;
+    }
+/* 보이지 않고 공간을 삭제한 설정 */
+    .v3 {
+      display: none;
+      border: 1px dotted red;
+    }
+  </style>
+  <title>title</title>
+</head>
+
+<body>
+  <div class="v1">
+    <img src="image/백화점 이미지.jpg">
+  </div>
+  <div class="v2">
+    <img src="image/비행기이미지.png">
+  </div>
+  <div class="v3">
+    <img src="image/군인 이미지.png">
+  </div>
+</body>
