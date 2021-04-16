@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 50px;
+      background: red;
+      position: relative;
+      animation: boxmove 2s linear infinite;
+    }
+
+    #box1 {
+      animation-delay: 3s;
+      animation-direction: reverse;
+    }
+
+    #box2 {
+      animation-delay: 5s;
+      animation-direction:alternate-reverse;
+    }
+
+    @keyframes boxmove {
+      from {
+        left: 0px
+      }
+
+      to {
+        left: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div id="box1">애니메이션 박스1</div>
+<div id="box2">애니메이션 박스2</div>
+
+</body>
