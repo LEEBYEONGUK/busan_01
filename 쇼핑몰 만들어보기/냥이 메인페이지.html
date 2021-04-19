@@ -16,41 +16,153 @@
 <body>
   <!---------------------------------------- 메인 나브바 1------------------------------------- -->
   <!-- 홈페이지 메인 이름이 왼쪽에 크게 나오게 하고,로그인,장바구니,검색창 등을 여기로 옮기자 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- 첫페이지로 이동 할 링크 -->
+      <!-- 첫 페이지로 이동하지만, 멍이 냥이에서 현재 보고 있는 페이지를 알 수 있도록하자. 굵은 글씨나 아이콘 삽입등으로 표시해서... 가능할까? -->
+      <a class="navbar-brand" href="냥이 메인페이지.html">냥이</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- 드롭다운 링크1 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            먹을 것
+          </a>
+          <!-- 드롭다운 링크1속 1 -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="냥이 메인페이지.html">건사료</a></li>
+            <li>
+            </li>
+            <li><a class="dropdown-item" href="#">습식사료</a></li>
+          </li>
+          <li><a class="dropdown-item" href="#">츄르</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">기타</a></li>
+        </ul>
+        
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        놀 것
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- 드롭다운  링크2속 -->
+            <li><a class="dropdown-item" href="#">낚싯대</a></li>
+            <li><a class="dropdown-item" href="#">스크래쳐</a></li>
+            <li>
+            </li>
+            <li><a class="dropdown-item" href="#">인형</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">기타</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          쉴 곳
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- 드롭다운  링크3속 -->
+          <li><a class="dropdown-item" href="이벤트페이지.html">캣타워</a></li>
+          <li><a class="dropdown-item" href="#">하우스</a></li>
+          <li>
+          </li>
+          <li><a class="dropdown-item" href="#">화장실</a></li>
+          <hr class="dropdown-divider">
+          <li><a class="dropdown-item" href="#">기타</a></li>
+        </ul>
+      </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- 로그인 modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      로그인
+    </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">로그인</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">이메일 주소</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">정확히 입력해주세요.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">아이디 정보 저장</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="냥이 메인페이지.html"><button type="submit" class="btn btn-primary">로그인</button></a>
+            <a href="회원가입페이지.html"> <button type="button" class="btn btn-primary">회원가입</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </nav>
+  <!-- 로그인 modal 끝 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+  <div class="col-md-3">
+  </div>
   <!---------------------------------------- 메인 나브바 2 메인 나브바 1 완성 후에 카테고리 중심으로 개편하자------------------------------------- -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <!-- 첫페이지로 이동 할 링크 -->
       <!-- 첫 페이지로 이동하지만, 멍이 냥이에서 현재 보고 있는 페이지를 알 수 있도록하자. 굵은 글씨나 아이콘 삽입등으로 표시해서... 가능할까? -->
-      <a class="navbar-brand" href="#">멍이 냥이</a>
+      <a class="navbar-brand" href="냥이 메인페이지.html">냥이</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <!-- 나브바 링크 1 -->
-            <a class="nav-link active" aria-current="page" href="#">멍이</a>
-          </li>
-          <li class="nav-item">
-            <!-- 나브바 링크 2 -->
-            <a class="nav-link active" aria-current="page" href="#">냥이</a>
-          </li>
+
           <!-- 드롭다운 링크1 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              멍이 물건
+              먹을 것
             </a>
             <!-- 드롭다운 링크1속 1 -->
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#">먹을 것</a></li>
+              <li><a class="dropdown-item" href="냥이 메인페이지.html">건사료</a></li>
               <li>
               </li>
-              <li><a class="dropdown-item" href="#">놀 것</a></li>
+              <li><a class="dropdown-item" href="#">습식사료</a></li>
           </li>
-          <li><a class="dropdown-item" href="#">쉴 곳</a></li>
+          <li><a class="dropdown-item" href="#">츄르</a></li>
           <hr class="dropdown-divider">
           <li><a class="dropdown-item" href="#">기타</a></li>
         </ul>
@@ -59,15 +171,31 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-            냥이 물건
+            놀 것
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <!-- 드롭다운  링크2속 -->
-            <li><a class="dropdown-item" href="#">먹을 것</a></li>
-            <li><a class="dropdown-item" href="#">놀 것</a></li>
+            <li><a class="dropdown-item" href="#">낚싯대</a></li>
+            <li><a class="dropdown-item" href="#">스크래쳐</a></li>
             <li>
             </li>
-            <li><a class="dropdown-item" href="#">잘 것</a></li>
+            <li><a class="dropdown-item" href="#">인형</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">기타</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            쉴 곳
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- 드롭다운  링크3속 -->
+            <li><a class="dropdown-item" href="이벤트페이지.html">캣타워</a></li>
+            <li><a class="dropdown-item" href="#">하우스</a></li>
+            <li>
+            </li>
+            <li><a class="dropdown-item" href="#">화장실</a></li>
             <hr class="dropdown-divider">
             <li><a class="dropdown-item" href="#">기타</a></li>
           </ul>
@@ -111,16 +239,16 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">로그인</button>
-            <button type="button" class="btn btn-primary">회원가입</button>
+            <a href="냥이 메인페이지.html"><button type="submit" class="btn btn-primary">로그인</button></a>
+            <a href="회원가입페이지.html"> <button type="button" class="btn btn-primary">회원가입</button></a>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 로그인 modal 끝 -->
   </nav>
+  <!-- 로그인 modal 끝 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
   </script>
@@ -177,7 +305,7 @@
               </div>
               <!-- 사이드바 메뉴목록1 -->
               <ul class="list-group">
-                <li class="list-group-item"><a href="#">건사료</a></li>
+                <li class="list-group-item"><a href="냥이 메인페이지.html">건사료</a></li>
                 <li class="list-group-item"><a href="#">습식사료</a></li>
                 <li class="list-group-item"><a href="#">츄르</a></li>
                 <li class="list-group-item"><a href="#">씹을 거</a></li>
@@ -198,7 +326,7 @@
             <ul class="list-group">
               <li class="list-group-item"><a href="#">낚싯대</a></li>
               <li class="list-group-item"><a href="#">스크래쳐</a></li>
-              <li class="list-group-item"><a href="#">물고 놀거</a></li>
+              <li class="list-group-item"><a href="#">인형</a></li>
               <li class="list-group-item"><a href="#">기타</a></li>
             </ul>
           </div>
@@ -208,11 +336,11 @@
           <!-- 패널 타이틀3 -->
           <div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title">냥이 쉴 거</h3>
+              <h3 class="panel-title">냥이 쉴 곳</h3>
             </div>
             <!-- 사이드바 메뉴목록3 -->
             <ul class="list-group">
-              <li class="list-group-item"><a href="#">캣타워</a></li>
+              <li class="list-group-item"><a href="이벤트페이지.html">캣타워</a></li>
               <li class="list-group-item"><a href="#">하우스</a></li>
               <li class="list-group-item"><a href="#">화장실</a></li>
               <li class="list-group-item"><a href="#">기타</a></li>
@@ -241,10 +369,10 @@
             <div class="col">
               <div class="card h-100">
                 <a href="http://www.naver.com"><img src="img/고양이 사료2.jpg" class="card-img-top" alt="..."></a>
-                  <div class="card-body">
-                    <h5 class="card-title">고급 사료2</h5>
-                    <p class="card-text">소중한 울냥이용 2<br>가격 -----원<br>용량-----kg <br>평점 --/5.0</p>
-                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">고급 사료2</h5>
+                  <p class="card-text">소중한 울냥이용 2<br>가격 -----원<br>용량-----kg <br>평점 --/5.0</p>
+                </div>
               </div>
             </div>
             <div class="col">
