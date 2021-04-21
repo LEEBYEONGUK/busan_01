@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="jquery-3.6.0.js"></script>
+  <title>title name</title>
+  <script>
+    // 함수의 종류 4가지
+    // 1. 매개변수와 반환값이 모두 없는 함수
+    // 함수 내부에서 연산에 필요한 모든 변수를 선언, 연산, 출력하는 함수
+    // 늘 동일한 결과값을 출력함
+
+    // 2. 매개변수는 존재하고, 반환값이 없는 함수
+    // 함수 내부 연산에 필요한 데이터를 외부에서 입력하여 사용하는 함수
+    // 입력되는 데이터에 따라 결과값이 다르게 출력
+
+    // 3. 매개변수는 없고, 반환값이 존재하는 함수
+    // 함수 내부 연산에 필요한 모든 변수를 선언, 연산하고 결과값을 외부에서 활용하기 위해 되돌려주는 함수
+    // 함수 내부의 결과값을 외부에서 사용할 수 있도록 다른 변수에서 받아서 사용
+
+    // 4. 매개변수와 반환값이 모두 존재하는 함수
+    // 함수 내부 연산에 필요한 데이터를 외부에서 입력하여 사용하는 함수, 연산 결과값을 외부에서 사용할 수 있도록 되돌려주는 함수
+
+    // 문제1)사칙 연산을 하는 함수를 생성하여 결과값을 출력해보기
+    // 함수의 4가지 형태에 따라서 4개씩 총 16개의 함수를 생성하여 호출
+    // 반환값이 있는 함수의 경우 함수 내에서 결과값을 출력하지 않고 외부 변수에서 받아서 대신 실행하도록 함
+    // sum1(더하기), sub1(빼기), multi1(곱하기), div1(나누기), sum2, sub2, multi2, div2, sum3, sub3, multi3, div3, sum4, sub4, multi4, div4
+
+    // 덧셈 예
+    function sum1() {
+      var a = 10;
+      var b = 20;
+      console.log(a + b);
+    };
+    sum1(10, 20)
+
+    function sum2(a, b) {
+      console.log(a + b);
+    };
+    sum2(10, 20)
+
+    function sum3() {
+      var a = 10;
+      var b = 20;
+      return a + b;
+    };
+
+    function sum4(a, b) {
+      return a + b;
+    };
+
+    function sub1() {
+      var a = 50;
+      var b = 30;
+      console.log(a - b);
+    };
+    sub1();
+
+    function sub2(a, b) {
+      console.log(a - b);
+    };
+
+    function sub3() {
+      var a = 80;
+      var b = 43;
+      return a - b;
+    }
+    sub3()
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
