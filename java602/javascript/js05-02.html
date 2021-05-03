@@ -92,7 +92,7 @@
     console.log("사본 배열 copyCars의 데이터 : " + copyCars.toString());
 
     // concat() : 두개의 배열을 하나의 배열로 합쳐주는 함수
-    // 두개의 배열을 하나의 배열로 합쳐진 새로운 배열을 생성
+    // 두개 이상의 배열을 하나의 배열로 합쳐진 새로운 배열을 생성
     // 기준이 되는 배열에 나머지 배열이 추가된 형태로 새로운 배열을 생성
     // 기준이 되는 배열에 push()로 나머지 배열이 추가되었다고 생각하면 쉬움
     // var 합쳐진 새 배열 명 = 원본배열1.concat(원본배열2);
@@ -105,6 +105,10 @@
     console.log("배열 backEndskill 내용" + backendEndSkill.toString());
     console.log("배열 webSkill 내용 : " + webSkill.toString());
     console.log(frontEndSkill.concat(backendEndSkill));
+
+    var dbSkill = ["MySql", "Oracle", "MsSql", "mongoDB"];
+    var webSkill3 = frontEndSkill.concat(frontEndSkill,backendEndSkill);
+    console.log("배열 webSkill3 내용 :" + webSkill3.toString());
 
   </script>
 </head>
